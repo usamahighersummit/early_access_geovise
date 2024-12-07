@@ -3,7 +3,7 @@ import { ArrowRight, Mail, CheckCircle2, AlertCircle } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 // Initialize EmailJS
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("fVu_fSvTF7cwsHnMJ");
 
 const CustomAlert = ({ variant = "default", children }) => {
   const styles = {
@@ -40,7 +40,7 @@ const EarlyAccessPage = () => {
 
     setLoading(true);
     try {
-      const result = await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+      const result = await emailjs.send("service_oa1at2j", "template_ab873ao", {
         user_email: email,
         signup_time: new Date().toLocaleString(),
         source: "Early Access Landing Page",
